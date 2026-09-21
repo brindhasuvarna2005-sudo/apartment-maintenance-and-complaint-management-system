@@ -1,0 +1,715 @@
+{
+  "info": {
+    "_postman_id": "1694f642-9739-43d6-a807-a464ed75f737",
+    "name": "Apartment Maintenance API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "57912996",
+    "_collection_link": "https://go.postman.co/collection/57912996-1694f642-9739-43d6-a807-a464ed75f737?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "List all residents",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/residents",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "residents"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/residents",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "residents"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "date",
+              "value": "Wed, 02 Sep 2026 17:59:43 GMT"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"residentId\": 1,\n    \"name\": \"Rahul Sharma\",\n    \"email\": \"rahul.sharma@mail.com\",\n    \"phone\": \"9876543210\",\n    \"flatNo\": \"A101\",\n    \"buildingName\": \"Sunrise Towers\"\n  },\n  {\n    \"residentId\": 2,\n    \"name\": \"Priya Nair\",\n    \"email\": \"priya.nair@mail.com\",\n    \"phone\": \"9876543211\",\n    \"flatNo\": \"B203\",\n    \"buildingName\": \"Sunrise Towers\"\n  },\n  {\n    \"residentId\": 3,\n    \"name\": \"Amit Verma\",\n    \"email\": \"amit.verma@mail.com\",\n    \"phone\": \"9876543212\",\n    \"flatNo\": \"C304\",\n    \"buildingName\": \"Green Valley\"\n  },\n  {\n    \"residentId\": 4,\n    \"name\": \"Sneha Iyer\",\n    \"email\": \"sneha.iyer@mail.com\",\n    \"phone\": \"9876543213\",\n    \"flatNo\": \"A102\",\n    \"buildingName\": \"Green Valley\"\n  },\n  {\n    \"residentId\": 5,\n    \"name\": \"Karan Mehta\",\n    \"email\": \"karan.mehta@mail.com\",\n    \"phone\": \"9876543214\",\n    \"flatNo\": \"D401\",\n    \"buildingName\": \"Palm Residency\"\n  },\n  {\n    \"residentId\": 6,\n    \"name\": \"Anjali Deshmukh\",\n    \"email\": \"anjali.deshmukh@mail.com\",\n    \"phone\": \"9876543215\",\n    \"flatNo\": \"B105\",\n    \"buildingName\": \"Silver Oaks\"\n  },\n  {\n    \"residentId\": 7,\n    \"name\": \"Vikram Singh\",\n    \"email\": \"vikram.singh@mail.com\",\n    \"phone\": \"9876543216\",\n    \"flatNo\": \"C202\",\n    \"buildingName\": \"Silver Oaks\"\n  },\n  {\n    \"residentId\": 8,\n    \"name\": \"Neha Kulkarni\",\n    \"email\": \"neha.kulkarni@mail.com\",\n    \"phone\": \"9876543217\",\n    \"flatNo\": \"A301\",\n    \"buildingName\": \"Lakeview Apartments\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "List all staff",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/staff",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "staff"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/staff",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "staff"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "date",
+              "value": "Wed, 02 Sep 2026 18:01:30 GMT"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"staffId\": 1,\n    \"name\": \"Suresh Patil\",\n    \"designation\": \"Technician\",\n    \"specialization\": \"Plumbing\"\n  },\n  {\n    \"staffId\": 2,\n    \"name\": \"Ramesh Gaikwad\",\n    \"designation\": \"Technician\",\n    \"specialization\": \"Electrical\"\n  },\n  {\n    \"staffId\": 3,\n    \"name\": \"Manoj Kale\",\n    \"designation\": \"Technician\",\n    \"specialization\": \"Carpentry\"\n  },\n  {\n    \"staffId\": 4,\n    \"name\": \"Deepak Jadhav\",\n    \"designation\": \"Technician\",\n    \"specialization\": \"Cleaning\"\n  },\n  {\n    \"staffId\": 5,\n    \"name\": \"Anil Bhosale\",\n    \"designation\": \"Supervisor\",\n    \"specialization\": \"General Maintenance\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "List all categories",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/categories",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "categories"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "New Request",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "categories"
+              ]
+            }
+          },
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "date",
+              "value": "Wed, 02 Sep 2026 18:02:56 GMT"
+            },
+            {
+              "key": "keep-alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n  {\n    \"categoryId\": 3,\n    \"categoryName\": \"Carpentry\"\n  },\n  {\n    \"categoryId\": 4,\n    \"categoryName\": \"Cleaning/Housekeeping\"\n  },\n  {\n    \"categoryId\": 2,\n    \"categoryName\": \"Electrical\"\n  },\n  {\n    \"categoryId\": 5,\n    \"categoryName\": \"General Maintenance\"\n  },\n  {\n    \"categoryId\": 1,\n    \"categoryName\": \"Plumbing\"\n  }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Create complaint (status starts OPEN)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"residentId\": 1,\r\n  \"categoryId\": 1,\r\n  \"description\": \"Kitchen tap is leaking continuously\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/complaints",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "complaints"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "List all complaints",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/complaints",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "complaints"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Invalid status jump OPEN to CLOSED (400)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"status\": \"CLOSED\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/complaints/12/status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "complaints",
+            "12",
+            "status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Assign staff to complaint",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"status\": \"RESOLVED\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/complaints/11/assign/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "complaints",
+            "11",
+            "assign",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Complaint by ID (verify resolved)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/complaints/11",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "complaints",
+            "11"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create complaint 2 (for status jump test)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"description\": \"Elevator making loud noise\",\r\n  \"residentId\": 1,\r\n  \"categoryId\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/complaints",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "complaints"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create resident invalid (400 fieldErrors)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"\",\r\n  \"email\": \"not-an-email\",\r\n  \"phone\": \"9876543210\",\r\n  \"flatNo\": \"A1\",\r\n  \"buildingId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/residents",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "residents"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Filter complaints by OPEN",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/complaints/status/OPEN",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "complaints",
+            "status",
+            "OPEN"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Filter complaints by RESOLVED",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/complaints/status/RESOLVED",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "complaints",
+            "status",
+            "RESOLVED"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Resident not found (404)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/residents/99999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "residents",
+            "99999"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "single resident",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/residents/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "residents",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update resident",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Rahul Sharma\",\r\n  \"email\": \"rahul.sharma@mail.com\",\r\n  \"phone\": \"9876543210\",\r\n  \"flatNo\": \"A101\",\r\n  \"buildingId\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/residents/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "residents",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE a resident",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/residents/8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "residents",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Explicit \"Resolve complaint\" request",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"status\": \"RESOLVED\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/complaints/6/status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "complaints",
+            "6",
+            "status"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Test Tower\",\r\n  \"address\": \"Test Street\",\r\n  \"totalFlats\": 20\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/buildings",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "buildings"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update building",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/buildings/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "buildings",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update building",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Test Tower Updated\",\r\n  \"address\": \"New Test Street\",\r\n  \"totalFlats\": 25\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/buildings/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "buildings",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete building (no residents)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/buildings/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "buildings",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete building(when residents exist)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/buildings/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "buildings",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "validation",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl\n",
+      "value": ""
+    }
+  ]
+}
