@@ -21,6 +21,10 @@ The system lets residents raise maintenance complaints and lets staff manage the
 - Role-based access enforcing business rules at the service layer
 - All endpoints verified end-to-end with Postman
 
+## Testing
+
+18 unit tests (JUnit 5 + Mockito) covering the service layer; run with `mvn test`.
+
 ## A Bug I Fixed
 
 Every `GET` endpoint was silently returning a 500 error. Root cause: a `LazyInitializationException` caused by the Hibernate session closing before lazy-loaded associations were accessed. Fixed by applying `@Transactional(readOnly = true)` on the relevant service methods and adding structured exception logging so the failure mode would be visible immediately if it recurred.
